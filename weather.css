@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+*{
+    margin:0px;
+    padding:0px;
+  box-sizing: border-box;
+  
+    }
+
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: black;
+        font-family:"Montserrat",Georgia ;
+}
+
+.container{
+    background:linear-gradient(135deg,#00feba,#5b548a);
+   width:250px;
+   min-height: 100px;
+   max-height: 350px;
+  
+    box-shadow: 0px 0px 24px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    top: 15px;
+    left: 19px;
+}
+
+.search input{
+   height:26px;
+   border:  solid white;
+   border-radius: 55px;
+   text-indent: 20px;
+   color: #555;
+   background-color:#ebfffc ;
+   outline: 0px;
+   
+}
+.search button{
+  border-radius: 50%;
+  margin-left:10px ;
+  margin-top:1 px;
+  height:25px;
+  border: 1px solid white;
+  width:25px;
+  outline: none;
+  background-color:#ebfffc ;
+}
+.search img{
+    padding: 5px;
+    height:20px;
+    width:20px;
+
+    object-fit: contain;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+.sun{
+    width:90px;
+    height:130px;
+}
+.sun img{
+    margin-top: 30px;
+    width:100%;
+}
+.bot{
+    margin-top:49px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+ 
+}
+
+.hum{
+    display: flex;
+}
+
+.hum img{
+   
+    width: 20px;
+    height:20px;
+}
+.info1{
+    
+    color: white;
+    padding: 9px;
+    margin-top: -12px;
+}
+h4{
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+}
+
+.weather{
+   display: none;
+}
+.mid{
+    font-size: 25px;
+    margin-top: 20px;
+}
