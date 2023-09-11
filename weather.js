@@ -6,6 +6,12 @@ const searchbtn=document.querySelector(".search button");
 const photoi=document.querySelector(".photo");
 async function weather(city){
     const response =await fetch(api+city+`&appid=${apikey}`);
+    if(response.status==404){
+        document.querySelector(".error").style.display="block";
+        document.querySelector(".weather").style.display="none";
+    }
+    else{
+   
     let data=await response.json();
     console.log(data);
     document .querySelector(".temp").innerText=data.main.temp;
@@ -31,6 +37,9 @@ async function weather(city){
         photoi.src="rain.png";
     }
     document.querySelector(".weather").style.display="block";
+    document.querySelector(".error").style.display="none";
+}
+     
 }
 searchbtn.addEventListener("click",()=>{
     weather(searchbox.value);
